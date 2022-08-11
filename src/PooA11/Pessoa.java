@@ -40,6 +40,6 @@ public abstract class Pessoa
 	// Metodos
 	public final void fazerAniv()
 	{
-
+		this.setIdade(getIdade() + 1);
 	}
 }
