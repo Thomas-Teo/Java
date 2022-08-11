@@ -2,26 +2,30 @@ package PooA11;
 
 public class Bolsista extends Aluno
 {
-	//Atributos
-	private int bolsa;
-	//Get Set
+	// Atributos
+	private double bolsa;
+	
+	// Get Set
 
-	public int getBolsa()
+	public double getBolsa()
 	{
 		return bolsa;
 	}
 
-	public void setBolsa(int bolsa)
+	public void setBolsa(double bolsa)
 	{
 		this.bolsa = bolsa;
 	}
-	//Metodos
-	public void RenovarBolsa() {
-		
+
+	// Metodos
+	public void renovarBolsa(double novaBolsa)
+	{
+		this.setBolsa(novaBolsa);
 	}
-	
+
 	@Override
-	public void PagarMensalidade() {
-		
+	public void pagarMensalidade()
+	{
+		System.out.println("Mensalidade paga, desconto de bolsa aplicada");
 	}
 }
